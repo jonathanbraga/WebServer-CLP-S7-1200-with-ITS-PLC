@@ -163,6 +163,11 @@
 
     //--Grafico Principal atuador_0---//
     $(function () {
+        Highcharts.setOptions({
+        global: {
+            useUTC: false
+        }
+    });
         Highcharts.chart('graficoAtuador', {
                 chart: {
                     type: 'spline',
